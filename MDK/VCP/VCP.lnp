@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+".\vcp\usb_bsp.o"
+".\vcp\usbd_cdc_vcp.o"
+".\vcp\usbd_desc.o"
+".\vcp\usbd_usr.o"
+".\vcp\usb_dcd_int.o"
+".\vcp\usb_core.o"
+".\vcp\usb_dcd.o"
+".\vcp\usbd_core.o"
+".\vcp\usbd_ioreq.o"
+".\vcp\usbd_req.o"
+".\vcp\usbd_cdc_core.o"
+".\vcp\stm32f10x_flash.o"
+".\vcp\stm32f10x_rcc.o"
+".\vcp\stm32f10x_gpio.o"
+".\vcp\stm32f10x_exti.o"
+".\vcp\misc.o"
+".\vcp\startup_stm32f10x_cl.o"
+".\vcp\system_stm32f10x.o"
+".\vcp\main.o"
+".\vcp\stm32f10x_it.o"
+--library_type=microlib --strict --scatter ".\VCP\VCP.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\VCP.map" -o .\VCP\VCP.axf

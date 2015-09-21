@@ -1,0 +1,225 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\work\UWB\code\newproj\MDK\loca_proj.uvproj
+Project File Date:  04/03/2014
+
+<h2>Output:</h2>
+Rebuild target 'ranging'
+compiling usb_bsp.c...
+compiling usbd_cdc_vcp.c...
+compiling usbd_desc.c...
+compiling usbd_usr.c...
+compiling usb_dcd_int.c...
+compiling usb_core.c...
+compiling usb_dcd.c...
+compiling usbd_core.c...
+compiling usbd_ioreq.c...
+compiling usbd_req.c...
+compiling usbd_cdc_core.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling misc.c...
+assembling startup_stm32f10x_cl.s...
+compiling system_stm32f10x.c...
+compiling os_driver.c...
+assembling cpu_a.asm...
+compiling cpu_c.c...
+assembling os_cpu_a.asm...
+compiling os_cpu_c.c...
+compiling os_dbg.c...
+compiling os_core.c...
+compiling os_flag.c...
+compiling os_mbox.c...
+compiling os_mem.c...
+compiling os_mutex.c...
+compiling os_q.c...
+compiling os_sem.c...
+compiling os_task.c...
+compiling os_time.c...
+compiling os_tmr.c...
+compiling deca_device.c...
+..\decadriver\deca_device.c(941): warning:  #68-D: integer conversion resulted in a change of sign
+      uint32  regval = DWT_ERROR ;
+..\decadriver\deca_device.c(973): warning:  #68-D: integer conversion resulted in a change of sign
+      uint16  regval = DWT_ERROR ;
+..\decadriver\deca_device.c(1319): warning:  #223-D: function "Sleep" declared implicitly
+      Sleep(10);
+..\decadriver\deca_device.c(1379): warning:  #68-D: integer conversion resulted in a change of sign
+          return DWT_ERROR;
+..\decadriver\deca_device.c(1592): warning:  #223-D: function "Sleep" declared implicitly
+      Sleep(1);
+..\decadriver\deca_device.c(1739): warning:  #223-D: function "Sleep" declared implicitly
+          Sleep(5);
+..\decadriver\deca_device.c(1803): warning:  #223-D: function "Sleep" declared implicitly
+      Sleep(1); // Allow time for code to upload (should take up to 120 us)
+..\decadriver\deca_device.c(2764): warning:  #223-D: function "Sleep" declared implicitly
+      Sleep(1);
+..\decadriver\deca_device.c(1192): warning: C4017W: mr may be used before being set
+    uint32 mra,mrb,mr;
+..\decadriver\deca_device.c(1192): warning: C4017W: mrb may be used before being set
+    uint32 mra,mrb,mr;
+..\decadriver\deca_device.c(1192): warning: C4017W: mra may be used before being set
+    uint32 mra,mrb,mr;
+..\decadriver\deca_device.c: 11 warnings, 0 errors
+compiling deca_params_init.c...
+compiling deca_range_tables.c...
+compiling bsp.c...
+..\app\bsp.c(6): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+        GPIO_InitTypeDef gpio_init;
+..\app\bsp.c(9): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
+..\app\bsp.c(9): error:  #20: identifier "RCC_APB2Periph_GPIOC" is undefined
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
+..\app\bsp.c(9): error:  #20: identifier "ENABLE" is undefined
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
+..\app\bsp.c(10): error:  #20: identifier "RCC_APB2Periph_GPIOA" is undefined
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+..\app\bsp.c(11): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\app\bsp.c(12): error:  #20: identifier "RCC_APB2Periph_SPI1" is undefined
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE);
+..\app\bsp.c(13): error:  #20: identifier "RCC_APB2Periph_AFIO" is undefined
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+..\app\bsp.c(16): error:  #20: identifier "APP_LED_1" is undefined
+        gpio_init.GPIO_Pin = APP_LED_1 | APP_LED_2 | APP_LED_3 | APP_LED_4;
+..\app\bsp.c(16): error:  #20: identifier "APP_LED_2" is undefined
+        gpio_init.GPIO_Pin = APP_LED_1 | APP_LED_2 | APP_LED_3 | APP_LED_4;
+..\app\bsp.c(16): error:  #20: identifier "APP_LED_3" is undefined
+        gpio_init.GPIO_Pin = APP_LED_1 | APP_LED_2 | APP_LED_3 | APP_LED_4;
+..\app\bsp.c(16): error:  #20: identifier "APP_LED_4" is undefined
+        gpio_init.GPIO_Pin = APP_LED_1 | APP_LED_2 | APP_LED_3 | APP_LED_4;
+..\app\bsp.c(17): error:  #20: identifier "GPIO_Mode_Out_PP" is undefined
+        gpio_init.GPIO_Mode = GPIO_Mode_Out_PP;
+..\app\bsp.c(18): error:  #20: identifier "GPIO_Speed_2MHz" is undefined
+        gpio_init.GPIO_Speed = GPIO_Speed_2MHz;
+..\app\bsp.c(19): warning:  #223-D: function "GPIO_Init" declared implicitly
+        GPIO_Init(APP_IO_PORT, &gpio_init);
+..\app\bsp.c(19): error:  #20: identifier "APP_IO_PORT" is undefined
+        GPIO_Init(APP_IO_PORT, &gpio_init);
+..\app\bsp.c(22): error:  #20: identifier "DW1000_RSTn" is undefined
+        gpio_init.GPIO_Pin = DW1000_RSTn;                               //DW1000复位引脚
+..\app\bsp.c(23): error:  #20: identifier "GPIO_Mode_Out_OD" is undefined
+        gpio_init.GPIO_Mode = GPIO_Mode_Out_OD;
+..\app\bsp.c(25): error:  #20: identifier "DW1000_DATA_PORT" is undefined
+        GPIO_Init(DW1000_DATA_PORT, &gpio_init);
+..\app\bsp.c(27): error:  #20: identifier "DW1000_CS" is undefined
+        gpio_init.GPIO_Pin = DW1000_CS;                                 //DW1000片选引脚
+..\app\bsp.c(29): error:  #20: identifier "GPIO_Speed_10MHz" is undefined
+        gpio_init.GPIO_Speed = GPIO_Speed_10MHz;
+..\app\bsp.c(32): error:  #20: identifier "DW1000_SCK" is undefined
+        gpio_init.GPIO_Pin = DW1000_SCK | DW1000_MOSI;  //DW1000 SPI时钟和MOSI引脚
+..\app\bsp.c(32): error:  #20: identifier "DW1000_MOSI" is undefined
+        gpio_init.GPIO_Pin = DW1000_SCK | DW1000_MOSI;  //DW1000 SPI时钟和MOSI引脚
+..\app\bsp.c(33): error:  #20: identifier "GPIO_Mode_AF_PP" is undefined
+        gpio_init.GPIO_Mode = GPIO_Mode_AF_PP;
+..\app\bsp.c(34): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+        gpio_init.GPIO_Speed = GPIO_Speed_50MHz;
+..\app\bsp.c(37): error:  #20: identifier "DW1000_MISO" is undefined
+        gpio_init.GPIO_Pin = DW1000_MISO;                               //DW1000 MISO引脚
+..\app\bsp.c(38): error:  #20: identifier "GPIO_Mode_AF_OD" is undefined
+        gpio_init.GPIO_Mode = GPIO_Mode_AF_OD;
+..\app\bsp.c(42): error:  #20: identifier "DW1000_WAK" is undefined
+        gpio_init.GPIO_Pin = DW1000_WAK;                                //DW1000唤醒引脚
+..\app\bsp.c(45): error:  #20: identifier "DW1000_CTRL_PORT" is undefined
+        GPIO_Init(DW1000_CTRL_PORT, &gpio_init);
+..\app\bsp.c(47): error:  #20: identifier "DW1000_IRQn" is undefined
+        gpio_init.GPIO_Pin = DW1000_IRQn;                               //DW1000中断引脚
+..\app\bsp.c(53): warning:  #223-D: function "BSP_DWTSpiSet" declared implicitly
+        BSP_DWTSpiSet();
+..\app\bsp.c(54): warning:  #223-D: function "SPI_NSSInternalSoftwareConfig" declared implicitly
+        SPI_NSSInternalSoftwareConfig(SPI1, SPI_NSSInternalSoft_Set);
+..\app\bsp.c(54): error:  #20: identifier "SPI1" is undefined
+        SPI_NSSInternalSoftwareConfig(SPI1, SPI_NSSInternalSoft_Set);
+..\app\bsp.c(54): error:  #20: identifier "SPI_NSSInternalSoft_Set" is undefined
+        SPI_NSSInternalSoftwareConfig(SPI1, SPI_NSSInternalSoft_Set);
+..\app\bsp.c: 4 warnings, 30 errors
+compiling app.c...
+..\app\app.c(127): warning:  #223-D: function "app_taskcreate" declared implicitly
+        app_taskcreate();
+..\app\app.c(130): warning:  #223-D: function "BSP_Init" declared implicitly
+        BSP_Init();
+..\app\app.c(133): warning:  #223-D: function "Shell_Init" declared implicitly
+        Shell_Init();
+..\app\app.c(136): warning:  #223-D: function "Shell_SendDatas" declared implicitly
+        Shell_SendDatas(strlen(logstr), logstr);
+..\app\app.c(171): error:  #159: declaration is incompatible with previous "app_taskcreate" (declared at line 127)
+  static void app_taskcreate(void)
+..\app\app.c(58): warning:  #177-D: function "App_TaskShell" was declared but never referenced
+  static        void    App_TaskShell(void      *p_arg);
+..\app\app.c(171): warning:  #177-D: function "app_taskcreate" was declared but never referenced
+  static void app_taskcreate(void)
+..\app\app.c: 6 warnings, 1 error
+compiling decaspi.c...
+..\bsp\decaspi.c(11): error:  #20: identifier "uint16" is undefined
+      uint16       headerLength,
+..\bsp\decaspi.c(12): error:  #20: identifier "uint8" is undefined
+      const uint8 *headerBuffer,
+..\bsp\decaspi.c(13): error:  #20: identifier "uint32" is undefined
+      uint32       bodylength,
+..\bsp\decaspi.c(14): error:  #20: identifier "uint8" is undefined
+      const uint8 *bodyBuffer
+..\bsp\decaspi.c(20): error:  #20: identifier "decaIrqStatus_t" is undefined
+      decaIrqStatus_t  stat ;
+..\bsp\decaspi.c(22): warning:  #223-D: function "decamutexon" declared implicitly
+      stat = decamutexon() ;
+..\bsp\decaspi.c(27): warning:  #223-D: function "port_SPIx_clear_chip_select" declared implicitly
+      port_SPIx_clear_chip_select();  //CS low
+..\bsp\decaspi.c(31): warning:  #223-D: function "port_SPIx_send_data" declared implicitly
+        port_SPIx_send_data(headerBuffer[i]); //send data on the SPI
+..\bsp\decaspi.c(33): warning:  #223-D: function "port_SPIx_no_data" declared implicitly
+        while (port_SPIx_no_data()); //wait for rx buffer to fill
+..\bsp\decaspi.c(35): warning:  #223-D: function "port_SPIx_receive_data" declared implicitly
+        port_SPIx_receive_data(); //this clears RXNE bit
+..\bsp\decaspi.c(40): warning:  #223-D: function "port_SPIx_send_data" declared implicitly
+                port_SPIx_send_data(bodyBuffer[i]); //send data on the SPI
+..\bsp\decaspi.c(42): warning:  #223-D: function "port_SPIx_no_data" declared implicitly
+                while (port_SPIx_no_data()); //wait for rx buffer to fill
+..\bsp\decaspi.c(44): warning:  #223-D: function "port_SPIx_receive_data" declared implicitly
+                port_SPIx_receive_data(); //this clears RXNE bit
+..\bsp\decaspi.c(47): warning:  #223-D: function "port_SPIx_set_chip_select" declared implicitly
+      port_SPIx_set_chip_select();  //CS high
+..\bsp\decaspi.c(49): warning:  #223-D: function "decamutexoff" declared implicitly
+      decamutexoff(stat) ;
+..\bsp\decaspi.c(65): error:  #20: identifier "uint16" is undefined
+      uint16       headerLength,
+..\bsp\decaspi.c(66): error:  #20: identifier "uint8" is undefined
+      const uint8 *headerBuffer,
+..\bsp\decaspi.c(67): error:  #20: identifier "uint32" is undefined
+      uint32       readlength,
+..\bsp\decaspi.c(68): error:  #20: identifier "uint8" is undefined
+      uint8       *readBuffer
+..\bsp\decaspi.c(74): error:  #20: identifier "decaIrqStatus_t" is undefined
+      decaIrqStatus_t  stat ;
+..\bsp\decaspi.c(76): warning:  #223-D: function "decamutexon" declared implicitly
+      stat = decamutexon() ;
+..\bsp\decaspi.c(81): warning:  #223-D: function "port_SPIx_clear_chip_select" declared implicitly
+      port_SPIx_clear_chip_select();  //CS low
+..\bsp\decaspi.c(85): warning:  #223-D: function "port_SPIx_send_data" declared implicitly
+        port_SPIx_send_data(headerBuffer[i]); //send data on the SPI
+..\bsp\decaspi.c(87): warning:  #223-D: function "port_SPIx_no_data" declared implicitly
+        while (port_SPIx_no_data()); //wait for rx buffer to fill
+..\bsp\decaspi.c(89): warning:  #223-D: function "port_SPIx_receive_data" declared implicitly
+        port_SPIx_receive_data(); //this clears RXNE bit
+..\bsp\decaspi.c(94): warning:  #223-D: function "port_SPIx_send_data" declared implicitly
+        port_SPIx_send_data(0); //send data on the SPI
+..\bsp\decaspi.c(96): warning:  #223-D: function "port_SPIx_no_data" declared implicitly
+        while (port_SPIx_no_data()); //wait for rx buffer to fill
+..\bsp\decaspi.c(98): warning:  #223-D: function "port_SPIx_receive_data" declared implicitly
+        readBuffer[i] = port_SPIx_receive_data(); //this clears RXNE bit
+..\bsp\decaspi.c(101): warning:  #223-D: function "port_SPIx_set_chip_select" declared implicitly
+      port_SPIx_set_chip_select();  //CS high
+..\bsp\decaspi.c(103): warning:  #223-D: function "decamutexoff" declared implicitly
+      decamutexoff(stat) ;
+..\bsp\decaspi.c(106): warning:  #1-D: last line of file ends without a newline
+  } // end readfromspi()
+..\bsp\decaspi.c: 21 warnings, 10 errors
+".\ranging\ranging.axf" - 41 Error(s), 42 Warning(s).
+Target not created
+</pre>
+</body>
+</html>

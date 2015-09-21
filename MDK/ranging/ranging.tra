@@ -1,0 +1,62 @@
+*** Creating Trace Output File '.\ranging\ranging.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\ranging\usb_bsp.o"'
+### List of Objects: adding '".\ranging\usbd_cdc_vcp.o"'
+### List of Objects: adding '".\ranging\usbd_desc.o"'
+### List of Objects: adding '".\ranging\usbd_usr.o"'
+### List of Objects: adding '".\ranging\usb_dcd_int.o"'
+### List of Objects: adding '".\ranging\usb_core.o"'
+### List of Objects: adding '".\ranging\usb_dcd.o"'
+### List of Objects: adding '".\ranging\usbd_core.o"'
+### List of Objects: adding '".\ranging\usbd_ioreq.o"'
+### List of Objects: adding '".\ranging\usbd_req.o"'
+### List of Objects: adding '".\ranging\usbd_cdc_core.o"'
+### List of Objects: adding '".\ranging\stm32f10x_flash.o"'
+### List of Objects: adding '".\ranging\stm32f10x_rcc.o"'
+### List of Objects: adding '".\ranging\stm32f10x_gpio.o"'
+### List of Objects: adding '".\ranging\stm32f10x_exti.o"'
+### List of Objects: adding '".\ranging\misc.o"'
+### List of Objects: adding '".\ranging\stm32f10x_spi.o"'
+### List of Objects: adding '".\ranging\stm32f10x_usart.o"'
+### List of Objects: adding '".\ranging\startup_stm32f10x_cl.o"'
+### List of Objects: adding '".\ranging\system_stm32f10x.o"'
+### List of Objects: adding '".\ranging\os_driver.o"'
+### List of Objects: adding '".\ranging\cpu_a.o"'
+### List of Objects: adding '".\ranging\cpu_c.o"'
+### List of Objects: adding '".\ranging\os_cpu_a.o"'
+### List of Objects: adding '".\ranging\os_cpu_c.o"'
+### List of Objects: adding '".\ranging\os_dbg.o"'
+### List of Objects: adding '".\ranging\os_core.o"'
+### List of Objects: adding '".\ranging\os_flag.o"'
+### List of Objects: adding '".\ranging\os_mbox.o"'
+### List of Objects: adding '".\ranging\os_mem.o"'
+### List of Objects: adding '".\ranging\os_mutex.o"'
+### List of Objects: adding '".\ranging\os_q.o"'
+### List of Objects: adding '".\ranging\os_sem.o"'
+### List of Objects: adding '".\ranging\os_task.o"'
+### List of Objects: adding '".\ranging\os_time.o"'
+### List of Objects: adding '".\ranging\os_tmr.o"'
+### List of Objects: adding '".\ranging\deca_device.o"'
+### List of Objects: adding '".\ranging\deca_params_init.o"'
+### List of Objects: adding '".\ranging\deca_range_tables.o"'
+### List of Objects: adding '".\ranging\app.o"'
+### List of Objects: adding '".\ranging\ranging.o"'
+### List of Objects: adding '".\ranging\stm32f10x_it.o"'
+### List of Objects: adding '".\ranging\bsp.o"'
+### List of Objects: adding '".\ranging\decahard.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\ranging\usb_bsp.o" ".\ranging\usbd_cdc_vcp.o" ".\ranging\usbd_desc.o" ".\ranging\usbd_usr.o" ".\ranging\usb_dcd_int.o" ".\ranging\usb_core.o" ".\ranging\usb_dcd.o" ".\ranging\usbd_core.o" ".\ranging\usbd_ioreq.o" ".\ranging\usbd_req.o" ".\ranging\usbd_cdc_core.o" ".\ranging\stm32f10x_flash.o" ".\ranging\stm32f10x_rcc.o" ".\ranging\stm32f10x_gpio.o" ".\ranging\stm32f10x_exti.o" ".\ranging\misc.o" ".\ranging\stm32f10x_spi.o" ".\ranging\stm32f10x_usart.o" ".\ranging\startup_stm32f10x_cl.o" ".\ranging\system_stm32f10x.o" ".\ranging\os_driver.o" ".\ranging\cpu_a.o" ".\ranging\cpu_c.o" ".\ranging\os_cpu_a.o" ".\ranging\os_cpu_c.o" ".\ranging\os_dbg.o" ".\ranging\os_core.o" ".\ranging\os_flag.o" ".\ranging\os_mbox.o" ".\ranging\os_mem.o" ".\ranging\os_mutex.o" ".\ranging\os_q.o" ".\ranging\os_sem.o" ".\ranging\os_task.o" ".\ranging\os_time.o" ".\ranging\os_tmr.o" ".\ranging\deca_device.o" ".\ranging\deca_params_init.o" ".\ranging\deca_range_tables.o" ".\ranging\app.o" ".\ranging\ranging.o" ".\ranging\stm32f10x_it.o" ".\ranging\bsp.o" ".\ranging\decahard.o" --library_type=microlib --strict --scatter ".\ranging\ranging.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\ranging.map" -o ".\ranging\ranging.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\ranging\ranging.axf'
+### ADS-LD Command File: '.\ranging\ranging.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\ranging\ranging.lnp', Handle=0x000002E4
+### Writing '.lnp' file
+### ADS-LD Command file '.\ranging\ranging.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
